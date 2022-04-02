@@ -1,7 +1,32 @@
 import React from 'react'
 
+import { CTA, Navbar, Brand } from './components'
+import {
+  Footer,
+  Features,
+  Header,
+  Blog,
+  Possibility,
+  WhatGPT3,
+} from './containers'
+import './App.css'
+
 const App = () => {
-  return <div>App</div>
+  return (
+    <div className="App">
+      <div className="gradient__bg">
+        <Navbar />
+        <Header />
+      </div>
+      <Brand />
+      <WhatGPT3 />
+      <Features />
+      <Possibility />
+      <CTA />
+      <Blog />
+      <Footer />
+    </div>
+  )
 }
 
 export default App
